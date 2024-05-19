@@ -1,4 +1,4 @@
-Итоговый вид:
+Итоговый вид приложения:
 
 ![image](https://github.com/sanchelus/ITModul_ItojProject/assets/117862884/28c05858-892c-4f20-9f97-9033a1980da6)
 
