@@ -1,0 +1,38 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель</title>
+</head>
+<body>
+    <h1>Административная панель</h1>
+    <form action="/admin" method="post">
+        <label for="room">Выберите комнату:</label>
+        <select name="room" id="room">
+            {% for room in house.rooms %}
+                <option value="{{ room.name }}">{{ room.name }}</option>
+            {% endfor %}
+        </select><br>
+        <label for="temperature">Температура:</label>
+        <input type="number" name="temperature" id="temperature" required><br>
+        <label for="light">Свет:</label>
+        <input type="checkbox" name="light" id="light"><br>
+        <input type="submit" value="Сохранить">
+    </form>
+    <form action="/turn_on_all_lights" method="get">
+        <input type="submit" value="Включить все света">
+    </form>
+    <form action="/turn_off_all_lights" method="get">
+        <input type="submit" value="Выключить все света">
+    </form>
+    <form action="/toggle_alarm" method="get">
+        <input type="submit" value="Включить/выключить сигнализацию">
+    </form>
+    <form action="/toggle_door" method="get">
+        <input type="submit" value="Открыть/закрыть дверь">
+    </form>
+    <a href="/">Информационная панель</a>
+</body>
+</html>

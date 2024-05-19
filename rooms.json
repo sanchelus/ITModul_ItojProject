@@ -1,0 +1,11 @@
+{
+  "rooms": [
+    {"name": "Комната 1", "light": true, "temperature": 111},
+    {"name": "Комната 2", "light": false, "temperature": 15},
+    {"name": "Кухня", "light": true, "temperature": 999},
+    {"name": "Гостиная", "light": true, "temperature": 17},
+    {"name": "Прихожая", "light": true, "temperature": 13},
+    {"name": "Ванная", "light": false, "temperature": 25},
+    {"name": "Туалет", "light": false, "temperature": 25}
+  ]
+}
